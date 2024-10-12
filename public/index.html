@@ -4,90 +4,205 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./output.css" />
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="./custom.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <title>Document</title>
   </head>
-  <body">
-
+  <body class="py-[16px] px-[20px]">
     <!-- NAVBAR -->
     <nav
-      class="container h-[64px] flex justify-between items-center pr-[6px] pl-[6px] self-stretch gap-[200px] sm:w-auto sm:gap"
+      class="h-[64px] flex justify-between items-center pr-[6px] pl-[6px] self-stretch gap-[200px] sm:w-full sm:gap"
     >
       <img src="../img/svg2.svg" class="w-[52.5px] h-[27px]" />
-
 
       <ul
         class="hidden sm:flex sm:absolute sm:left-1/2 sm:transform sm:-translate-x-1/2 gap-4 sm:flex-wrap gap-4"
       >
         <li>
-            <a href="" class="">Home</a>
+          <a href="" class="">Home</a>
         </li>
         <li>
-            <a href="" class="">Status</a>
+          <a href="" class="">Status</a>
         </li>
         <li>
-            <a href="" class="">Symtomps</a>
+          <a href="" class="">Symtomps</a>
         </li>
         <li>
-            <a href="" class="">About</a>
+          <a href="" class="">About</a>
         </li>
         <li>
-            <button href="" class="md:hidden border-solid border-2">Diagnose</button>
+          <button href="" class="md:hidden border-solid border-2">
+            Diagnose
+          </button>
         </li>
+      </ul>
 
-        </ul>
-
-        <div>
-            <button href="" class="md:block hidden border-solid border-2">Diagnose</button>
-            <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-            </span>
-        </div>
-        
+      <div>
+        <button href="" class="md:block hidden border-solid border-2">
+          Diagnose
+        </button>
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
     </nav>
 
     <!-- end of navbar -->
 
     <!-- HOME -->
-    <div class="border-solid border-2 border-blue-400 container py-[16px] px-[20px] w-auto h-[754px] flex flex-col gap-[24px] sm:flex-row sm:h-[900px] sm:justify-center sm:items-start">
-        <div class="sm:flex sm:flex-col sm:justify-center sm:items-center	sm:border-solid sm:border-2 sm: border-blue-500">
-            <h1 class="font-bold text-[56px]">MPox
-            </h1>
-            <p class="hidden sm:block">
-                Previously known as monkeypox, is a viral illness caused by the monkeypox virus, a species of the genus Orthopoxvirus. WHO has declared a public health emergency of international concern (PHEIC) twice, the first time in May 2022 and the second time in August 2024. 
-            </p>
-            <button class="hidden sm:block">
-                Read More
-            </button>
-
+    <section id="home">
+      <div
+        class="flex flex-col gap-[24px] sm:flex-row sm:h-[650px] sm:justify-center sm:items-start"
+      >
+        <div
+          class="border-solid border-2 border-red-600 sm:flex-1 sm:flex sm:flex-col sm:items-start sm:justify-items-start sm:gap-[32px] sm:pl-[64px] sm:pr-[80px] sm:pt-[100px]"
+        >
+          <p>Hi everyone, my name is Sadam.</p>
+          <h1 class="font-bold text-[56px]">
+            IT en·thu·si·ast based on Malang
+          </h1>
+          <p class="hidden sm:block text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+            possimus ipsum, distinctio maxime libero dolorem eos? Debitis
+            laudantium ratione repudiandae temporibus atque alias sequi labore,
+            molestiae id possimus sapiente recusandae doloribus magni error
+            doloremque ipsa, iusto optio animi asperiores obcaecati mollitia
+            perferendis, ipsum amet. Ipsum natus incidunt deleniti fuga
+            molestiae.
+          </p>
+          <button class="hidden sm:block">Get In Touch</button>
         </div>
-        <div class="sm:border-solid sm:border-2 sm: border-blue-500">
-            <img src="/img/handy-running-green-virus.png" alt="">
+
+        <div
+          class="border-solid border-2 border-red-500 items-center justify-center sm:flex-1 sm:items-center sm:border-solid sm:border-2 sm:border-red-600 sm:flex"
+        >
+          <img
+            class="w-auto max-h-[400px] sm:max-h-[533px] border-2 m-auto border-red-500 rounded-full"
+            src="/img/avatar.png"
+            alt=""
+          />
         </div>
 
         <!-- class mobile -->
         <div class="sm:hidden">
-            <p>
-                Previously known as monkeypox, is a viral illness caused by the monkeypox virus, a species of the genus Orthopoxvirus. WHO has declared a public health emergency of international concern (PHEIC) twice, the first time in May 2022 and the second time in August 2024. 
-            </p>
+          <p class="text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+            possimus ipsum, distinctio maxime libero dolorem eos? Debitis
+            laudantium ratione repudiandae temporibus atque alias sequi labore,
+            molestiae id possimus sapiente recusandae doloribus magni error
+            doloremque ipsa, iusto optio animi asperiores obcaecati mollitia
+            perferendis, ipsum amet. Ipsum natus incidunt deleniti fuga
+            molestiae.
+          </p>
         </div>
         <div class="sm:hidden">
-            <button>Read More</button>
+          <button class="">Get In Touch</button>
         </div>
         <!-- class mobile -->
-    </div>
-    
+      </div>
 
+      <!-- end of home -->
+    </section>
 
-    <!-- end of home -->
+    <!-- about me -->
+    <section id="about me">
+      <div class="mt-9 border-solid border-2 border-blue-600">
+        <h1 class="font-bold">About me</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut quos
+          dignissimos velit natus, rem maxime. Illum, ipsum porro? Accusamus,
+          facilis?
+        </p>
+      </div>
+      <!-- tech stack that ive used -->
+      <div class="slider">
+        <div class="slider-track flex gap-6">
+          <img
+            class="slider-element"
+            src="/img/slider_element/html.png"
+            alt=""
+          />
+          <img class="slider-element" src="/img/slider_element/js.png" alt="" />
+          <img
+            class="slider-element"
+            src="/img/slider_element/tailwind.png"
+            alt=""
+          />
+          <img
+            class="slider-element"
+            src="/img/slider_element/bootstrap.png"
+            alt=""
+          />
+          <img
+            class="slider-element"
+            src="/img/slider_element/php.png"
+            alt=""
+          />
+          <img
+            class="slider-element"
+            src="/img/slider_element/python.png"
+            alt=""
+          />
+          <!-- ---- -->
+        </div>
+      </div>
+    </section>
 
+    <!-- end of about me -->
 
     <script>
-        function Menu(e){
-          let list = document.querySelector('ul');
-          e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+      // JavaScript code to create a seamless scroll effect
+      window.onload = function () {
+        const track = document.querySelector(".slider-track");
+        const elements = document.querySelectorAll(".slider-element");
+        let scrollSpeed = 0.5; // Speed of scrolling (pixels per frame)
+        let scrollAmount = 0;
+
+        // Calculate the total width of all elements combined
+        let totalWidth = 0;
+        elements.forEach((element) => {
+          totalWidth += element.offsetWidth;
+        });
+
+        // Clone the entire set of elements to create a seamless effect
+        track.innerHTML += track.innerHTML;
+
+        function seamlessScroll() {
+          scrollAmount -= scrollSpeed;
+
+          // If scrolled past the original set of elements, reset the scrollAmount
+          if (Math.abs(scrollAmount) >= totalWidth) {
+            scrollAmount = 0; // Reset scrollAmount to 0 to continue the seamless loop
+          }
+
+          // Apply the scroll transformation
+          track.style.transform = `translateX(${scrollAmount}px)`;
+
+          // Continue the animation frame-by-frame
+          requestAnimationFrame(seamlessScroll);
         }
+
+        // Start the seamless scrolling animation
+        requestAnimationFrame(seamlessScroll);
+      };
+
+      function Menu(e) {
+        let list = document.querySelector("ul");
+        e.name === "menu"
+          ? ((e.name = "close"),
+            list.classList.add("top-[80px]"),
+            list.classList.add("opacity-100"))
+          : ((e.name = "menu"),
+            list.classList.remove("top-[80px]"),
+            list.classList.remove("opacity-100"));
+      }
     </script>
   </body>
 </html>

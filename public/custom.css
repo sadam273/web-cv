@@ -1,0 +1,18 @@
+.slider {
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+
+.slider .slider-track {
+  display: flex;
+  gap: 6px;
+  width: max-content;
+}
+
+.slider .slider-element {
+  height: auto;
+  width: 100px;
+}
