@@ -111,17 +111,80 @@
       <!-- end of home -->
     </section>
 
+    <!-- project -->
+
+    <section id="projects" class="border-solid border-2 border-red-500">
+      <h1 class="font-bold text-center">Latest Projects</h1>
+      <div
+        id="project-element"
+        class="flex-row border-solid border-2 border-blue-600 gap-52"
+      >
+        <!-- --- -->
+        <div class="e-1 flex">
+          <img
+            class="w-[200px] h-auto"
+            src="/img/projects/leaflet js.jpeg"
+            alt=""
+          />
+          <div class="flex-row">
+            <p>JUDUL</p>
+            <button>More</button>
+          </div>
+        </div>
+        <!-- --- -->
+        <div class="e-2 flex">
+          <img
+            class="w-[200px] h-auto"
+            src="/img/projects/leaflet js.jpeg"
+            alt=""
+          />
+          <div class="flex-row">
+            <p>JUDUL</p>
+            <button>More</button>
+          </div>
+        </div>
+        <!-- --- -->
+        <div class="e-3 flex">
+          <img
+            class="w-[200px] h-auto"
+            src="/img/projects/leaflet js.jpeg"
+            alt=""
+          />
+          <div class="flex-row">
+            <p>JUDUL</p>
+            <button>More</button>
+          </div>
+        </div>
+        <!-- --- -->
+        <div class="e-4 flex">
+          <img
+            class="w-[200px] h-auto"
+            src="/img/projects/leaflet js.jpeg"
+            alt=""
+          />
+          <div class="flex-row">
+            <p>JUDUL</p>
+            <button>More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end project -->
+
     <!-- about me -->
     <section id="about me">
       <div class="mt-9 border-solid border-2 border-blue-600">
-        <h1 class="font-bold">About me</h1>
-        <p>
+        <h1 class="font-bold text-center">About me</h1>
+        <p class="text-center">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut quos
           dignissimos velit natus, rem maxime. Illum, ipsum porro? Accusamus,
           facilis?
         </p>
       </div>
       <!-- tech stack that ive used -->
+
+      <h1 class="font-bold text-center">Tools and Skills</h1>
       <div class="slider">
         <div class="slider-track flex gap-6">
           <img
@@ -162,7 +225,7 @@
       window.onload = function () {
         const track = document.querySelector(".slider-track");
         const elements = document.querySelectorAll(".slider-element");
-        let scrollSpeed = 0.5; // Speed of scrolling (pixels per frame)
+        let scrollSpeed = 0.2; // Speed of scrolling (pixels per frame)
         let scrollAmount = 0;
 
         // Calculate the total width of all elements combined
